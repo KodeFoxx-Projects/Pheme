@@ -9,7 +9,7 @@ namespace Kodefoxx.Pheme.Shared.Domain.Tests.Notifications
     public sealed class NotificationConverterTests
     {
         [Fact]
-        public void Returns_null_when_no_before_or_after_implementations_are_provided()
+        public void Returns_empty_string_when_no_before_or_after_implementations_are_provided()
         {
             var sut = CreateNullToStringNotificationConverter();
             var actual = sut.ConvertToTargetNotification(new NullNotification());
