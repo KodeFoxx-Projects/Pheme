@@ -5,8 +5,6 @@ VisualStudioVersion = 15.0.28010.2041
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{072637C2-53DB-4EEC-B92E-F3C2208EAA47}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{F92CDDBB-83D1-450F-AF53-07B5A3AC0B7D}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{BFB318F3-4C7A-4D87-808B-67A93EF9AD7A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Implementations", "Implementations", "{4D1CFCDC-921F-45D7-BB54-7A90921F46C9}"
@@ -18,6 +16,13 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kodefoxx.Pheme.Shared.Domain", "Shared\Kodefoxx.Pheme.Shared.Domain\Kodefoxx.Pheme.Shared.Domain.csproj", "{1FA061EC-40E1-4918-911C-5671C1899DBA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kodefoxx.Pheme.Shared.Domain.Tests", "Shared\Kodefoxx.Pheme.Shared.Domain.Tests\Kodefoxx.Pheme.Shared.Domain.Tests.csproj", "{EA391351-BA56-46E7-BC94-575EE7F36C21}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2E5ED724-C441-4CBB-A228-E3643BB0C6CD}"
+	ProjectSection(SolutionItems) = preProject
+		..\.gitignore = ..\.gitignore
+		..\LICENSE = ..\LICENSE
+		..\README.md = ..\README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
