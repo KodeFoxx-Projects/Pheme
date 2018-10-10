@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Company>KodeFoxx</Company>
+    <Authors>Yves Schelpe &lt;yves.schelpe@gmail.com&gt;</Authors>
+    <Copyright>KodeFoxx</Copyright>
+    <Description>Shared infrastructural code for KodeFoxx's Pheme.</Description>
+    <RepositoryUrl>https://github.com/KodeFoxx-Projects/Pheme</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReleaseNotes>- v1.0.0
+-- Initial Release</PackageReleaseNotes>
+    <PackageProjectUrl>https://github.com/KodeFoxx-Projects/Pheme</PackageProjectUrl>
+    <PackageLicenseUrl></PackageLicenseUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageIconUrl>https://avatars2.githubusercontent.com/u/33200491?s=400&amp;u=feb9832532ac4329a3814acb5919e646ecf92619&amp;v=4</PackageIconUrl>
+  </PropertyGroup>
+
+</Project>
