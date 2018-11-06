@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net;
 using Kodefoxx.Pheme.Shared.Domain.Converters;
 using Kodefoxx.Pheme.Shared.Domain.Targets;
 using Kodefoxx.Pheme.Shared.Infrastructure.Logging;
@@ -35,6 +36,24 @@ namespace Kodefoxx.Pheme.Slack.WebHook.Client
         public void Publish(SlackWebHookNotification notification)
             => _logger.LogWithTryCatch(() => {
                     var jsonString = GetNotificationAsSlackJsonString(notification);
+                    Publish("", jsonString);
+                }
+            )
+        ;
+
+        /// <summary>
+        /// Publishes the <paramref name="jsonString"/> to a given <see cref="webHookUrl"/>.
+        /// </summary>
+        /// <param name="webHookUrl">The url of the web hook to publish to.</param>
+        /// <param name="jsonString">The json message to send to the web hook.</param>
+        public void Publish(string webHookUrl, string jsonString)
+            => _logger.LogWithTryCatch(() => {
+                    using (var webClient = new WebClient())
+                    {
+                        _logger.LogTrace($"Start publishing via WebHook '{webHookUrl}', with content '{jsonString}'");
+                        var response = webClient.UploadString(new Uri(webHookUrl), "POST", jsonString);
+                        _logger.LogTrace($"Uploaded json string, response text was: '{response}'");
+                    }
                 }
             )
         ;
