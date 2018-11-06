@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Shared\Kodefoxx.Pheme.Shared.Domain\Kodefoxx.Pheme.Shared.Domain.csproj" />
+    <ProjectReference Include="..\..\..\..\Shared\Kodefoxx.Pheme.Shared.Infrastructure\Kodefoxx.Pheme.Shared.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
